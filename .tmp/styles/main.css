@@ -1,0 +1,1466 @@
+/* Animation styles*/
+.outerWrap {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.innerWrap {
+    display: table-cell;
+    vertical-align: middle;
+    background: #21a0ad;
+}
+
+.animStage {
+  width: 800px;
+  height: 800px;
+    position: relative;
+  overflow: hidden;
+  background: #319cad;
+  cursor: pointer;
+  margin: 0 auto;
+  z-index: 50;
+}
+
+#animStage-1, #animStage-2, #animStage-3, #animStage-4 {
+  visibility: hidden;
+}
+
+.animStage.intro {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.7em;
+  padding: 50px;
+  width: 700px;
+  height: 700px;
+}
+.animStage.outro {
+  visibility: hidden;
+}
+.animStage.intro .txt, .animStage.outro .txt {
+  text-align: center;
+  position: relative;
+  top: 50%; /* IE 9 */ /* Safari */
+    transform: translate(0,-50%);
+}
+.animStage.outro .txt img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .animStage {
+    width: 590px;
+    height: 600px;
+  }
+  .animStage.intro {
+    font-size: 1.7em;
+    width: 500px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .animStage {
+    width: 400px;
+    height: 400px;
+  }
+  .animStage.intro {
+    font-size: 1.3em;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+  }
+
+}
+
+/* ANIMATION 1 */
+
+#animStage-1 #txt-only-risk {
+  position: absolute;
+  width: 740px;
+  height: 209px;
+  top: 264px;
+  left: 24px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-only-risk.png) no-repeat top left / 740px 209px;
+}
+
+#animStage-1 #txt-avoid {
+  position: absolute;
+  width: 428px;
+  height: 113px;
+  top: 475px;
+  left: 190px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-avoid.png) no-repeat top left / 428px 113px;
+}
+
+#animStage-1 #txt-is-the {
+  position: absolute;
+  width: 299px;
+  height: 102px;
+  top: 266px;
+  left: 134px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-is-the.png) no-repeat top left / 299px 102px;
+  visibility: hidden;
+}
+
+#animStage-1 #txt-risk {
+  position: absolute;
+  width: 188px;
+  height: 102px;
+  top: 266px;
+  left: 489px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-risk.png) no-repeat top left / 188px 102px;
+  visibility: hidden;
+}
+
+#animStage-1 #txt-of {
+  position: absolute;
+  width: 104px;
+  height: 103px;
+  top: 375px;
+  left: 169px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-of.png) no-repeat top left / 104px 103px;
+  visibility: hidden;
+}
+
+#animStage-1 #txt-doing {
+  position: absolute;
+  width: 309px;
+  height: 126px;
+  top: 375px;
+  left: 319px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-doing.png) no-repeat top left / 309px 126px;
+  visibility: hidden;
+}
+
+#animStage-1 #txt-nothing-1 {
+  position: absolute;
+  width: 325px;
+  height: 128px;
+  top: 506px;
+  left: 57px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-nothing-1.png) no-repeat top left / 325px 128px;
+  visibility: hidden;
+}
+
+#animStage-1 #txt-nothing-2 {
+  position: absolute;
+  width: 361px;
+  height: 128px;
+  top: 506px;
+  left: 382px;
+  background: transparent url(../img/01-risk-of-doing-nothing/txt-nothing-2.png) no-repeat top left / 361px 128px;
+  visibility: hidden;
+}
+
+#animStage-1 #icon-warning {
+  position: absolute;
+  width: 203px;
+  height: 177px;
+  top: 900px;
+  left: 150px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-warning.png) no-repeat top left / 203px 177px;
+}
+
+#animStage-1 #icon-fire {
+  position: absolute;
+  width: 143px;
+  height: 184px;
+  top: 900px;
+  left: 510px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-fire.png) no-repeat top left / 143px 184px;
+}
+
+#animStage-1 #icon-stock-crash {
+  position: absolute;
+  width: 184px;
+  height: 184px;
+  top: 900px;
+  left: 120px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-stock-crash.png) no-repeat top left / 184px 184px;
+}
+
+#animStage-1 #icon-storm {
+  position: absolute;
+  width: 178px;
+  height: 186px;
+  top: 900px;
+  left: 550px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-storm.png) no-repeat top left / 178px 186px;
+}
+
+#animStage-1 #icon-virus {
+  position: absolute;
+  width: 163px;
+  height: 164px;
+  top: 900px;
+  left: 140px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-virus.png) no-repeat top left / 163px 164px;
+}
+
+#animStage-1 #icon-do-nothing {
+  position: absolute;
+  width: 183px;
+  height: 154px;
+  top: 900px;
+  left: 295px;
+  background: transparent url(../img/01-risk-of-doing-nothing/icon-do-nothing.png) no-repeat top left / 183px 154px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  #animStage-1 #txt-only-risk {background: transparent url(../img/01-risk-of-doing-nothing/txt-only-risk@2x.png) no-repeat top left / 740px 209px;}
+  #animStage-1 #txt-avoid {background: transparent url(../img/01-risk-of-doing-nothing/txt-avoid@2x.png) no-repeat top left / 428px 113px;}
+  #animStage-1 #txt-is-the {background: transparent url(../img/01-risk-of-doing-nothing/txt-is-the@2x.png) no-repeat top left / 299px 102px;}
+  #animStage-1 #txt-risk {background: transparent url(../img/01-risk-of-doing-nothing/txt-risk@2x.png) no-repeat top left / 188px 102px;}
+  #animStage-1 #txt-of {background: transparent url(../img/01-risk-of-doing-nothing/txt-of@2x.png) no-repeat top left / 104px 103px;}
+  #animStage-1 #txt-doing {background: transparent url(../img/01-risk-of-doing-nothing/txt-doing@2x.png) no-repeat top left / 309px 126px;}
+  #animStage-1 #txt-nothing-1 {background: transparent url(../img/01-risk-of-doing-nothing/txt-nothing-1@2x.png) no-repeat top left / 325px 128px;}
+  #animStage-1 #txt-nothing-2 {background: transparent url(../img/01-risk-of-doing-nothing/txt-nothing-2@2x.png) no-repeat top left / 361px 128px;}
+  #animStage-1 #icon-warning {background: transparent url(../img/01-risk-of-doing-nothing/icon-warning@2x.png) no-repeat top left / 203px 177px;}
+  #animStage-1 #icon-fire {background: transparent url(../img/01-risk-of-doing-nothing/icon-fire@2x.png) no-repeat top left / 143px 184px;}
+  #animStage-1 #icon-stock-crash {background: transparent url(../img/01-risk-of-doing-nothing/icon-stock-crash@2x.png) no-repeat top left / 184px 184px;}
+  #animStage-1 #icon-storm {background: transparent url(../img/01-risk-of-doing-nothing/icon-storm@2x.png) no-repeat top left / 178px 186px;}
+  #animStage-1 #icon-virus {background: transparent url(../img/01-risk-of-doing-nothing/icon-virus@2x.png) no-repeat top left / 163px 164px;}
+  #animStage-1 #icon-do-nothing {background: transparent url(../img/01-risk-of-doing-nothing/icon-do-nothing@2x.png) no-repeat top left / 183px 154px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #animStage-1 #txt-only-risk {
+    width: 555px;
+    height: 157px;
+    top: 198px;
+    left: 18px;
+    background-size: 555px 157px;
+  }
+
+  #animStage-1 #txt-avoid {
+    width: 321px;
+    height: 85px;
+    top: 356px;
+    left: 142px;
+    background-size: 321px 85px;
+  }
+
+  #animStage-1 #txt-is-the {
+    width: 224px;
+    height: 75px;
+    top: 200px;
+    left: 101px;
+    background-size: 224px 75px;
+  }
+
+  #animStage-1 #txt-risk {
+    position: absolute;
+    width: 141px;
+    height: 77px;
+    top: 200px;
+    left: 367px;
+    background-size: 141px 77px;
+  }
+
+  #animStage-1 #txt-of {
+    width: 78px;
+    height: 77px;
+    top: 281px;
+    left: 127px;
+    background-size: 78px 77px;
+  }
+
+  #animStage-1 #txt-doing {
+    position: absolute;
+    width: 232px;
+    height: 95px;
+    top: 281px;
+    left: 239px;
+    background-size: 232px 95px;
+  }
+
+  #animStage-1 #txt-nothing-1 {
+    width: 244px;
+    height: 96px;
+    top: 380px;
+    left: 43px;
+    background-size: 244px 96px;
+  }
+
+  #animStage-1 #txt-nothing-2 {
+    width: 271px;
+    height: 96px;
+    top: 380px;
+    left: 287px;
+    background-size: 271px 96px;
+  }
+
+  #animStage-1 #icon-warning {
+    width: 152px;
+    height: 133px;
+    top: 675px;
+    left: 113px;
+    background-size: 152px 133px;
+  }
+
+  #animStage-1 #icon-fire {
+    width: 107px;
+    height: 138px;
+    top: 675px;
+    left: 383px;
+    background-size: 107px 138px;
+  }
+
+  #animStage-1 #icon-stock-crash {
+    width: 138px;
+    height: 138px;
+    top: 675px;
+    left: 90px;
+    background-size: 138px 138px;
+  }
+
+  #animStage-1 #icon-storm {
+    width: 134px;
+    height: 140px;
+    top: 675px;
+    left: 413px;
+    background-size: 134px 140px;
+  }
+
+  #animStage-1 #icon-virus {
+    width: 122px;
+    height: 123px;
+    top: 675px;
+    left: 105px;
+    background-size: 122px 123px;
+  }
+
+  #animStage-1 #icon-do-nothing {
+    width: 137px;
+    height: 116px;
+    top: 675px;
+    left: 221px;
+    background-size: 137px 116px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  #animStage-1 #txt-only-risk {
+    width: 370px;
+    height: 105px;
+    top: 132px;
+    left: 12px;
+    background-size: 370px 105px;
+  }
+
+  #animStage-1 #txt-avoid {
+    width: 214px;
+    height: 57px;
+    top: 238px;
+    left: 95px;
+    background-size: 214px 57px;
+  }
+
+  #animStage-1 #txt-is-the {
+    width: 150px;
+    height: 51px;
+    top: 133px;
+    left: 67px;
+    background-size: 150px 51px;
+  }
+
+  #animStage-1 #txt-risk {
+    width: 94px;
+    height: 51px;
+    top: 133px;
+    left: 245px;
+    background-size: 94px 51px;
+  }
+
+  #animStage-1 #txt-of {
+    width: 52px;
+    height: 52px;
+    top: 188px;
+    left: 85px;
+    background-size: 52px 52px;
+  }
+
+  #animStage-1 #txt-doing {
+    width: 160px;
+    height: 63px;
+    top: 188px;
+    left: 160px;
+    background-size: 160px 63px;
+  }
+
+  #animStage-1 #txt-nothing-1 {
+    width: 163px;
+    height: 64px;
+    top: 253px;
+    left: 29px;
+    background-size: 163px 64px;
+  }
+
+  #animStage-1 #txt-nothing-2 {
+    width: 181px;
+    height: 64px;
+    top: 253px;
+    left: 191px;
+    background-size: 181px 64px;
+  }
+
+  #animStage-1 #icon-warning {
+    width: 102px;
+    height: 89px;
+    top: 450px;
+    left: 75px;
+    background-size: 102px 89px;
+  }
+
+  #animStage-1 #icon-fire {
+    width: 77px;
+    height: 92px;
+    top: 450px;
+    left: 255px;
+    background-size: 77px 92px;
+  }
+
+  #animStage-1 #icon-stock-crash {
+    width: 92px;
+    height: 92px;
+    top: 450px;
+    left: 60px;
+    background-size: 92px 92px;
+  }
+
+  #animStage-1 #icon-storm {
+    width: 89px;
+    height: 93px;
+    top: 450px;
+    left: 275px;
+    background-size: 89px 93px;
+  }
+
+  #animStage-1 #icon-virus {
+    width: 82px;
+    height: 82px;
+    top: 450px;
+    left: 70px;
+    background-size: 82px 82px;
+  }
+
+  #animStage-1 #icon-do-nothing {
+    width: 92px;
+    height: 77px;
+    top: 450px;
+    left: 148px;
+    background-size: 92px 77px;
+  }
+}
+
+
+/* ANIMATION 2 */
+
+#animStage-2 #txt-a-ship {
+  position: absolute;
+  width: 671px;
+  height: 113px;
+  top: 131px;
+  left: 60px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-a-ship.png) no-repeat top left / 671px 113px;
+}
+
+#animStage-2 #txt-harbour {
+  position: absolute;
+  width: 662px;
+  height: 139px;
+  top: 620px;
+  left: 69px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-harbour.png) no-repeat top left / 662px 139px;
+}
+
+#animStage-2 #txt-the {
+  position: absolute;
+  width: 102px;
+  height: 183px;
+  top: 423px;
+  left: 66px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-the.png) no-repeat top left / 102px 183px;
+}
+
+#animStage-2 #txt-safe {
+  position: absolute;
+  width: 97px;
+  height: 319px;
+  top: 274px;
+  left: 635px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-safe.png) no-repeat top left / 97px 319px;
+  clip:rect(319px,97px,319px,0px);
+}
+
+#animStage-2 #txt-but {
+  position: absolute;
+  width: 395px;
+  height: 86px;
+  top: 20px;
+  left: 27px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-but.png) no-repeat top left / 395px 86px;
+  visibility: hidden;
+}
+
+#animStage-2 #txt-not{
+  position: absolute;
+  width: 359px;
+  height: 135px;
+  top: 125px;
+  left: 365px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-not.png) no-repeat top left / 359px 135px;
+  visibility: hidden;
+}
+
+#animStage-2 #txt-what-ships {
+  position: absolute;
+  width: 662px;
+  height: 94px;
+  top: 529px;
+  left: 0px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-what-ships.png) no-repeat top left / 662px 94px;
+  visibility: hidden;
+}
+
+#animStage-2 #txt-built-for {
+  position: absolute;
+  width: 497px;
+  height: 91px;
+  top: 666px;
+  left: 107px;
+  background: transparent url(../img/02-ship-in-the-harbour/txt-built-for.png) no-repeat top left / 497px 91px;
+  visibility: hidden;
+}
+
+#animStage-2 #icon-ship-front {
+  position: absolute;
+  width: 240px;
+  height: 270px;
+  top: 295px;
+  left: 280px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-ship-front.png) no-repeat top left / 240px 270px;
+}
+
+#animStage-2 #icon-anchor {
+  position: absolute;
+  width: 358px;
+  height: 389px;
+  top: 200px;
+  left: 110px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-anchor.png) no-repeat top left / 358px 389px;
+  visibility: hidden;
+}
+
+#animStage-2 #icon-waves {
+  position: absolute;
+  width: 1421px;
+  height: 107px;
+  top: 426px;
+  left: -1450px;
+  border-top: 20px solid rgba(230,229,30,.5);
+}
+
+#animStage-2 #icon-waves-waves {
+  position: absolute;
+  width: 1421px;
+  height: 107px;
+  top: 80px;
+  left: 0px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-waves.png) no-repeat top left / 1421px 107px;
+}
+
+#animStage-2 #icon-sphinx {
+  position: absolute;
+  width: 136px;
+  height: 100px;
+  top: 326px;
+  left: 280px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-sphinx.png) no-repeat top left / 136px 100px;
+}
+
+#animStage-2 #icon-pyramides {
+  position: absolute;
+  width: 305px;
+  height: 296px;
+  top: 130px;
+  left: 0px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-pyramides.png) no-repeat top left / 305px 296px;
+}
+
+#animStage-2 #icon-ship-side {
+  position: absolute;
+  width: 915px;
+  height: 291px;
+  top: 327px;
+  left: -930px;
+  background: transparent url(../img/02-ship-in-the-harbour/icon-ship-side.png) no-repeat top left / 915px 291px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  #animStage-2 #txt-a-ship {background: transparent url(../img/02-ship-in-the-harbour/txt-a-ship@2x.png) no-repeat top left / 671px 113px;}
+  #animStage-2 #txt-harbour {background: transparent url(../img/02-ship-in-the-harbour/txt-harbour@2x.png) no-repeat top left / 662px 139px;}
+  #animStage-2 #txt-the {background: transparent url(../img/02-ship-in-the-harbour/txt-the@2x.png) no-repeat top left / 102px 183px;}
+  #animStage-2 #txt-safe {background: transparent url(../img/02-ship-in-the-harbour/txt-safe@2x.png) no-repeat top left / 97px 319px;}
+  #animStage-2 #txt-but {background: transparent url(../img/02-ship-in-the-harbour/txt-but@2x.png) no-repeat top left / 395px 86px;}
+  #animStage-2 #txt-not{background: transparent url(../img/02-ship-in-the-harbour/txt-not@2x.png) no-repeat top left / 359px 135px;}
+  #animStage-2 #txt-what-ships {background: transparent url(../img/02-ship-in-the-harbour/txt-what-ships@2x.png) no-repeat top left / 662px 94px;}
+  #animStage-2 #txt-built-for {background: transparent url(../img/02-ship-in-the-harbour/txt-built-for@2x.png) no-repeat top left / 497px 91px;}
+  #animStage-2 #icon-ship-front {background: transparent url(../img/02-ship-in-the-harbour/icon-ship-front@2x.png) no-repeat top left / 240px 270px;}
+  #animStage-2 #icon-anchor {background: transparent url(../img/02-ship-in-the-harbour/icon-anchor@2x.png) no-repeat top left / 358px 389px;}
+  #animStage-2 #icon-waves-waves {background: transparent url(../img/02-ship-in-the-harbour/icon-waves@2x.png) no-repeat top left / 1421px 107px;}
+  #animStage-2 #icon-sphinx {background: transparent url(../img/02-ship-in-the-harbour/icon-sphinx@2x.png) no-repeat top left / 136px 100px;}
+  #animStage-2 #icon-pyramides {background: transparent url(../img/02-ship-in-the-harbour/icon-pyramides@2x.png) no-repeat top left / 305px 296px;}
+  #animStage-2 #icon-ship-side {background: transparent url(../img/02-ship-in-the-harbour/icon-ship-side@2x.png) no-repeat top left / 915px 291px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #animStage-2 #txt-a-ship {
+    width: 503px;
+    height: 85px;
+    top: 98px;
+    left: 45px;
+    background-size: 503px 85px;
+  }
+
+  #animStage-2 #txt-harbour {
+    width: 497px;
+    height: 104px;
+    top: 465px;
+    left: 52px;
+    background-size: 497px 104px;
+  }
+
+  #animStage-2 #txt-the {
+    width: 77px;
+    height: 137px;
+    top: 317px;
+    left: 50px;
+    background-size: 77px 137px;
+  }
+
+  #animStage-2 #txt-safe {
+    width: 73px;
+    height: 239px;
+    top: 206px;
+    left: 476px;
+    background-size: 73px 239px;
+  }
+
+  #animStage-2 #txt-but {
+    width: 296px;
+    height: 65px;
+    top: 15px;
+    left: 20px;
+    background-size: 296px 65px;
+  }
+
+  #animStage-2 #txt-not{
+    width: 269px;
+    height: 101px;
+    top: 94px;
+    left: 274px;
+    background-size: 269px 101px;
+  }
+
+  #animStage-2 #txt-what-ships {
+    width: 496px;
+    height: 70px;
+    top: 397px;
+    left: 0px;
+    background-size: 496px 70px;
+  }
+
+  #animStage-2 #txt-built-for {
+    width: 373px;
+    height: 68px;
+    top: 500px;
+    left: 80px;
+    background-size: 373px 68px;
+  }
+
+  #animStage-2 #icon-ship-front {
+    width: 180px;
+    height: 202px;
+    top: 221px;
+    left: 210px;
+    background-size: 180px 202px;
+  }
+
+  #animStage-2 #icon-anchor {
+    width: 268px;
+    height: 292px;
+    top: 150px;
+    left: 82px;
+    background-size: 268px 292px;
+  }
+
+  #animStage-2 #icon-waves {
+    width: 1066px;
+    height: 80px;
+    top: 320px;
+    left: -1088px;
+  }
+
+  #animStage-2 #icon-waves-waves {
+    width: 1066px;
+    height: 80px;
+    top: 60px;
+    left: 0px;
+    background-size: 1066px 80px;
+  }
+
+  #animStage-2 #icon-sphinx {
+    width: 102px;
+    height: 75px;
+    top: 244px;
+    left: 210px;
+    background-size: 102px 75px;
+  }
+
+  #animStage-2 #icon-pyramides {
+    width: 229px;
+    height: 222px;
+    top: 98px;
+    left: 0px;
+    background-size:  229px 222px;
+  }
+
+  #animStage-2 #icon-ship-side {
+    width: 686px;
+    height: 218px;
+    top: 245px;
+    left: -698px;
+    background-size: 686px 218px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  #animStage-2 #txt-a-ship {
+    width: 336px;
+    height: 56px;
+    top: 66px;
+    left: 30px;
+    background-size: 336px 56px;
+  }
+
+  #animStage-2 #txt-harbour {
+    width: 331px;
+    height: 70px;
+    top: 310px;
+    left: 34px;
+    background-size: 331px 70px;
+  }
+
+  #animStage-2 #txt-the {
+    width: 51px;
+    height: 92px;
+    top: 212px;
+    left: 33px;
+    background-size: 51px 92px;
+  }
+
+  #animStage-2 #txt-safe {
+    width: 48px;
+    height: 160px;
+    top: 137px;
+    left: 318px;
+    background-size: 48px 160px;
+  }
+
+  #animStage-2 #txt-but {
+    width: 198px;
+    height: 43px;
+    top: 10px;
+    left: 14px;
+    background-size: 198px 43px;
+  }
+
+  #animStage-2 #txt-not{
+    width: 180px;
+    height: 68px;
+    top: 62px;
+    left: 182px;
+    background-size: 180px 68px;
+  }
+
+  #animStage-2 #txt-what-ships {
+    width: 331px;
+    height: 47px;
+    top: 264px;
+    left: 0px;
+    background-size: 331px 47px;
+  }
+
+  #animStage-2 #txt-built-for {
+    width: 248px;
+    height: 46px;
+    top: 333px;
+    left: 54px;
+    background-size: 248px 46px;
+  }
+
+  #animStage-2 #icon-ship-front {
+    width: 120px;
+    height: 135px;
+    top: 148px;
+    left: 140px;
+    background-size: 120px 135px;
+  }
+
+  #animStage-2 #icon-anchor {
+    width: 179px;
+    height: 194px;
+    top: 100px;
+    left: 55px;
+    background-size: 179px 194px;
+  }
+
+  #animStage-2 #icon-waves {
+    width: 710px;
+    height: 54px;
+    top: 213px;
+    left: -725px;
+  }
+
+  #animStage-2 #icon-waves-waves {
+    width: 710px;
+    height: 54px;
+    top: 40px;
+    left: 0px;
+    background-size: 710px 54px;
+  }
+
+  #animStage-2 #icon-sphinx {
+    width: 68px;
+    height: 50px;
+    top: 163px;
+    left: 140px;
+    background-size: 68px 50px;
+  }
+
+  #animStage-2 #icon-pyramides {
+    width: 152px;
+    height: 148px;
+    top: 65px;
+    left: 0px;
+    background-size: 152px 148px;
+  }
+
+  #animStage-2 #icon-ship-side {
+    width: 458px;
+    height: 146px;
+    top: 164px;
+    left: -465px;
+    background-size: 458px 146px;
+  }
+}
+
+/* ANIMATION 3 */
+
+#animStage-3 #txt-travel-often {
+  position: absolute;
+  width: 659px;
+  height: 91px;
+  top: 420px;
+  left: -70px;
+  background: transparent url(../img/03-travel-often/txt-travel-often.png) no-repeat top left / 659px 91px;
+}
+
+#animStage-3 #txt-getting-lost {
+  position: absolute;
+  width: 686px;
+  height: 71px;
+  top: 520px;
+  left: 150px;
+  background: transparent url(../img/03-travel-often/txt-getting-lost.png) no-repeat top left / 686px 71px;
+}
+
+#animStage-3 #txt-help-discover {
+  position: absolute;
+  width: 733px;
+  height: 215px;
+  top: 820px;
+  left: 33px;
+  background: transparent url(../img/03-travel-often/txt-help-discover.png) no-repeat top left / 733px 215px;
+}
+
+#animStage-3 #txt-yourself {
+  position: absolute;
+  width: 496px;
+  height: 71px;
+  top: 820px;
+  left: 152px;
+  background: transparent url(../img/03-travel-often/txt-yourself.png) no-repeat top left / 496px 71px;
+}
+
+#animStage-3 #map {
+  position: absolute;
+  width: 715px;
+  height: 385px;
+  top: 207px;
+  left: 42px;
+  background: transparent url(../img/03-travel-often/map-dots-xl.gif) no-repeat top left / 715px 385px;
+}
+#animStage-3 #map-zoom {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 230px;
+  left: 200px;
+  border-radius: 200px;
+  background: #000;
+  /*background: #ff0 url(../img/03-travel-often/map-dots-xl-dot.gif) no-repeat top left / 4px 4px;*/
+}
+
+#animStage-3 #arrows {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 0;
+  left: 0;
+}
+#animStage-3 #dot {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 350px;
+  left: 350px;
+  border-radius: 50px;
+  background: #e6e51e;
+  visibility: hidden;
+}
+.arrow-ani {
+  width: 100px;
+  height: 500px;
+  position: absolute;
+  background: transparent url(../img/03-travel-often/arrow-ani.gif) no-repeat top left / 100px 400px;
+}
+#animStage-3 #arrow-ani-1 {
+  top: 30px;
+  left: 420px;
+}
+#animStage-3 #arrow-ani-2 {
+  top: 219px;
+  left: 472px;
+}
+#animStage-3 #arrow-ani-3 {
+  top: 276px;
+  left: 280px;
+}
+#animStage-3 #arrow-ani-4 {
+  top: 82px;
+  left: 222px;
+}
+#animStage-3 #arrow-ani-5 {
+  top: 160px;
+  left: 150px;
+}
+
+#animStage-3 #icon-persona {
+  position: absolute;
+  width: 585px;
+  height: 562px;
+  top: 420px;
+  left: 107px;
+  background: transparent url(../img/03-travel-often/icon-persona@2x.png) no-repeat top left / 585px 562px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  #animStage-3 #txt-travel-often {background: transparent url(../img/03-travel-often/txt-travel-often@2x.png) no-repeat top left / 659px 91px;}
+  #animStage-3 #txt-getting-lost {background: transparent url(../img/03-travel-often/txt-getting-lost@2x.png) no-repeat top left / 686px 71px;}
+  #animStage-3 #txt-help-discover {background: transparent url(../img/03-travel-often/txt-help-discover@2x.png) no-repeat top left / 733px 215px;}
+  #animStage-3 #txt-yourself {background: transparent url(../img/03-travel-often/txt-yourself@2x.png) no-repeat top left / 496px 71px;}
+  #animStage-3 #icon-persona {background: transparent url(../img/03-travel-often/icon-persona@2x.png) no-repeat top left / 585px 562px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #animStage-3 #txt-travel-often {
+    width: 494px;
+    height: 68px;
+    top: 315px;
+    left: -52px;
+    background-size: 494px 68px;
+  }
+
+  #animStage-3 #txt-getting-lost {
+    width: 514px;
+    height: 53px;
+    top: 390px;
+    left: 112px;
+    background-size: 514px 53px;
+  }
+
+  #animStage-3 #txt-help-discover {
+    width: 550px;
+    height: 161px;
+    top: 615px;
+    left: 25px;
+    background-size: 550px 161px;
+  }
+
+  #animStage-3 #txt-yourself {
+    width: 372px;
+    height: 53px;
+    top: 615px;
+    left: 114px;
+    background-size: 372px 53px;
+  }
+
+  #animStage-3 #map {
+    width: 536px;
+    height: 289px;
+    top: 155px;
+    left: 32px;
+    background-size: 536px 289px;
+  }
+  #animStage-3 #map-zoom {
+    width: 300px;
+    height: 300px;
+    top: 172px;
+    left: 150px;
+    border-radius: 150px;
+  }
+
+  #animStage-3 #arrows {
+    width: 600px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+  }
+  #animStage-3 #dot {
+    width: 76px;
+    height: 76px;
+    top: 262px;
+    left: 262px;
+    border-radius: 38px;
+  }
+  .arrow-ani {
+    width: 75px;
+    height: 375px;
+    background-size: 75px 300px;
+  }
+  #animStage-3 #arrow-ani-1 {
+    top: 22px;
+    left: 315px;
+  }
+  #animStage-3 #arrow-ani-2 {
+    top: 164px;
+    left: 354px;
+  }
+  #animStage-3 #arrow-ani-3 {
+    top: 207px;
+    left: 210px;
+  }
+  #animStage-3 #arrow-ani-4 {
+    top: 62px;
+    left: 166px;
+  }
+  #animStage-3 #arrow-ani-5 {
+    top: 120px;
+    left: 112px;
+  }
+
+  #animStage-3 #icon-persona {
+    width: 439px;
+    height: 422px;
+    top: 315px;
+    left: 80px;
+    background-size: 439px 422px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  #animStage-3 #txt-travel-often {
+    width: 330px;
+    height: 46px;
+    top: 210px;
+    left: -35px;
+    background-size: 330px 46px;
+  }
+
+  #animStage-3 #txt-getting-lost {
+    width: 343px;
+    height: 36px;
+    top: 260px;
+    left: 75px;
+    background-size: 343px 36px;
+  }
+
+  #animStage-3 #txt-help-discover {
+    width: 366px;
+    height: 108px;
+    top: 410px;
+    left: 16px;
+    background-size: 366px 108px;
+  }
+
+  #animStage-3 #txt-yourself {
+    width: 248px;
+    height: 36px;
+    top: 410px;
+    left: 76px;
+    background-size: 248px 36px;
+  }
+
+  #animStage-3 #map {
+    width: 358px;
+    height: 192px;
+    top: 104px;
+    left: 21px;
+    background-size: 358px 192px;
+  }
+  #animStage-3 #map-zoom {
+    width: 200px;
+    height: 200px;
+    top: 115px;
+    left: 100px;
+    border-radius: 100px;
+  }
+
+  #animStage-3 #arrows {
+    width: 400px;
+    height: 400px;
+    top: 0px;
+    left: 0px;
+  }
+  #animStage-3 #dot {
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    left: 175px;
+    border-radius: 25px;
+  }
+  .arrow-ani {
+    width: 50px;
+    height: 250px;
+    background-size: 50px 200px;
+  }
+  #animStage-3 #arrow-ani-1 {
+    top: 15px;
+    left: 210px;
+  }
+  #animStage-3 #arrow-ani-2 {
+    top: 110px;
+    left: 236px;
+  }
+  #animStage-3 #arrow-ani-3 {
+    top: 138px;
+    left: 140px;
+  }
+  #animStage-3 #arrow-ani-4 {
+    top: 41px;
+    left: 111px;
+  }
+  #animStage-3 #arrow-ani-5 {
+    top: 80px;
+    left: 75px;
+  }
+
+  #animStage-3 #icon-persona {
+    width: 292px;
+    height: 281px;
+    top: 210px;
+    left: 54px;
+    background-size: 292px 281px;
+  }
+
+}
+
+/* ANIMATION 4 */
+
+#animStage-4 #txt-do {
+  position: absolute;
+  width: 128px;
+  height: 84px;
+  top: 41px;
+  left: 341px;
+  background: transparent url(../img/04-one-thing-a-day/txt-do.png) no-repeat top left / 128px 84px;
+}
+
+#animStage-4 #txt-thing-a-day {
+  position: absolute;
+  width: 571px;
+  height: 113px;
+  top: 670px;
+  left: 123px;
+  background: transparent url(../img/04-one-thing-a-day/txt-thing-a-day.png) no-repeat top left / 571px 113px;
+}
+
+#animStage-4 #txt-that {
+  position: absolute;
+  width: 152px;
+  height: 73px;
+  top: 680px;
+  left: 40px;
+  background: transparent url(../img/04-one-thing-a-day/txt-that.png) no-repeat top left / 152px 73px;
+  visibility: hidden;
+}
+
+#animStage-4 #txt-scares {
+  position: absolute;
+  width: 790px;
+  height: 150px;
+  top: 645px;
+  left: 5px;
+  background: transparent url(../img/04-one-thing-a-day/txt-scares.png) no-repeat top left / 790px 150px;
+  visibility: hidden;
+}
+
+#animStage-4 #txt-you {
+  position: absolute;
+  width: 143px;
+  height: 71px;
+  top: 690px;
+  left: 610px;
+  background: transparent url(../img/04-one-thing-a-day/txt-you.png) no-repeat top left / 143px 71px;
+  visibility: hidden;
+}
+
+#animStage-4 .icon {
+  position: absolute;
+  width: 443px;
+  height: 487px;
+  top: 149px;
+  left: 179px;
+  /*visibility: hidden;*/
+}
+#animStage-4 .icon .check {
+  position: relative;
+  width: 60px;
+  height: 83px;
+  top: 345px;
+  left: 320px;
+  background: transparent url(../img/04-one-thing-a-day/check.png) no-repeat top left / 60px 83px;
+  visibility: hidden;
+}
+
+#animStage-4 #icon-map {
+  background: transparent url(../img/04-one-thing-a-day/icon-map.png) no-repeat top left / 443px 487px;
+  z-index: 150;
+}
+
+#animStage-4 #icon-plane {
+  background: transparent url(../img/04-one-thing-a-day/icon-plane.png) no-repeat top left / 443px 487px;
+  z-index: 140;
+}
+
+#animStage-4 #icon-storm {
+  background: transparent url(../img/04-one-thing-a-day/icon-storm.png) no-repeat top left / 443px 487px;
+  z-index: 130;
+}
+
+#animStage-4 #icon-bungee {
+  background: transparent url(../img/04-one-thing-a-day/icon-bungee.png) no-repeat top left / 443px 487px;
+  z-index: 120;
+}
+
+#animStage-4 #icon-spider {
+  background: transparent url(../img/04-one-thing-a-day/icon-spider.png) no-repeat top left / 443px 487px;
+  z-index: 110;
+}
+
+#animStage-4 #icon-check {
+  background: transparent url(../img/04-one-thing-a-day/icon-check.png) no-repeat top left / 443px 487px;
+  z-index: 100;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  #animStage-4 #txt-do {background: transparent url(../img/04-one-thing-a-day/txt-do@2x.png) no-repeat top left / 128px 84px;}
+  #animStage-4 #txt-thing-a-day {background: transparent url(../img/04-one-thing-a-day/txt-thing-a-day@2x.png) no-repeat top left / 571px 113px;}
+  #animStage-4 #txt-that {background: transparent url(../img/04-one-thing-a-day/txt-that@2x.png) no-repeat top left / 152px 73px;}
+  #animStage-4 #txt-scares {background: transparent url(../img/04-one-thing-a-day/txt-scares@2x.png) no-repeat top left / 790px 150px;}
+  #animStage-4 #txt-you {background: transparent url(../img/04-one-thing-a-day/txt-you@2x.png) no-repeat top left / 143px 71px;}
+  #animStage-4 .icon .check {background: transparent url(../img/04-one-thing-a-day/check@2x.png) no-repeat top left / 60px 83px;}
+  #animStage-4 #icon-map {background: transparent url(../img/04-one-thing-a-day/icon-map@2x.png) no-repeat top left / 443px 487px;}
+  #animStage-4 #icon-plane {background: transparent url(../img/04-one-thing-a-day/icon-plane@2x.png) no-repeat top left / 443px 487px;}
+  #animStage-4 #icon-storm {background: transparent url(../img/04-one-thing-a-day/icon-storm@2x.png) no-repeat top left / 443px 487px;}
+  #animStage-4 #icon-bungee {background: transparent url(../img/04-one-thing-a-day/icon-bungee@2x.png) no-repeat top left / 443px 487px;}
+  #animStage-4 #icon-spider {background: transparent url(../img/04-one-thing-a-day/icon-spider@2x.png) no-repeat top left / 443px 487px;}
+  #animStage-4 #icon-check {background: transparent url(../img/04-one-thing-a-day/icon-check@2x.png) no-repeat top left / 443px 487px;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+  #animStage-4 #txt-do {
+    width: 96px;
+    height: 63px;
+    top: 31px;
+    left: 256px;
+    background-size: 96px 63px;
+  }
+
+  #animStage-4 #txt-thing-a-day {
+    width: 428px;
+    height: 85px;
+    top: 502px;
+    left: 92px;
+    background-size: 428px 85px;
+  }
+
+  #animStage-4 #txt-that {
+    width: 114px;
+    height: 55px;
+    top: 510px;
+    left: 30px;
+    background-size: 114px 55px;
+  }
+
+  #animStage-4 #txt-scares {
+    width: 592px;
+    height: 112px;
+    top: 484px;
+    left: 4px;
+    background-size: 592px 112px;
+  }
+
+  #animStage-4 #txt-you {
+    width: 107px;
+    height: 53px;
+    top: 518px;
+    left: 458px;
+    background-size: 107px 53px;
+  }
+
+  #animStage-4 .icon {
+    width: 332px;
+    height: 365px;
+    top: 112px;
+    left: 134px;
+  }
+  #animStage-4 .icon .check {
+    width: 45px;
+    height: 62px;
+    top: 259px;
+    left: 240px;
+    background-size: 45px 62px;
+  }
+
+  #animStage-4 #icon-map {
+    background-size: 332px 365px;
+  }
+
+  #animStage-4 #icon-plane {
+    background-size: 332px 365px;
+  }
+
+  #animStage-4 #icon-storm {
+    background-size: 332px 365px;
+  }
+
+  #animStage-4 #icon-bungee {
+    background-size: 332px 365px;
+  }
+
+  #animStage-4 #icon-spider {
+    background-size: 332px 365px;
+  }
+
+  #animStage-4 #icon-check {
+    background-size: 332px 365px;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+  #animStage-4 #txt-do {
+    width: 64px;
+    height: 42px;
+    top: 20px;
+    left: 170px;
+    background-size: 64px 42px;
+  }
+
+  #animStage-4 #txt-thing-a-day {
+    width: 286px;
+    height: 56px;
+    top: 335px;
+    left: 62px;
+    background-size: 286px 56px;
+  }
+
+  #animStage-4 #txt-that {
+    width: 76px;
+    height: 36px;
+    top: 340px;
+    left: 20px;
+    background-size: 76px 36px;
+  }
+
+  #animStage-4 #txt-scares {
+    width: 395px;
+    height: 75px;
+    top: 322px;
+    left: 2px;
+    background-size: 395px 75px;
+  }
+
+  #animStage-4 #txt-you {
+    width: 72px;
+    height: 36px;
+    top: 345px;
+    left: 305px;
+    background-size: 72px 36px;
+  }
+
+  #animStage-4 .icon {
+    width: 222px;
+    height: 244px;
+    top: 74px;
+    left: 90px;
+  }
+  #animStage-4 .icon .check {
+    width: 30px;
+    height: 42px;
+    top: 172px;
+    left: 160px;
+    background-size: 30px 42px;
+  }
+
+  #animStage-4 #icon-map {
+    background-size: 222px 244px;
+  }
+
+  #animStage-4 #icon-plane {
+    background-size: 222px 244px;
+  }
+
+  #animStage-4 #icon-storm {
+    background-size: 222px 244px;
+  }
+
+  #animStage-4 #icon-bungee {
+    background-size: 222px 244px;
+  }
+
+  #animStage-4 #icon-spider {
+    background-size: 222px 244px;
+  }
+
+  #animStage-4 #icon-check {
+    background-size: 222px 244px;
+  }
+
+}
+
+
+
+
+
+  
+
+
+
+
+
+
